@@ -1,0 +1,56 @@
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 670px;
+  background: #ececec;
+  border-radius: 8px;
+  height: 80px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  cursor: text;
+
+  input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    height: 100%;
+    font-size: 16px;
+    width: 100%;
+  }
+  svg {
+    font-size: 38px;
+    margin-right: 20px;
+  }
+  div {
+    position: relative;
+    flex: 1;
+  }
+  span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left top;
+    transition: transform 0.2s ease-in-out;
+  }
+  input:not(:placeholder-shown) ~ span {
+    transform: translateY(-120%) scale(0.6);
+  }
+  button {
+    position: absolute;
+    display: flex;
+    right: 0;
+    border: none;
+    background: #ececec;
+    cursor: pointer;
+
+    svg {
+      font-size: 32px;
+    }
+
+    &:hover {
+      color: #6358dc;
+    }
+  }
+}

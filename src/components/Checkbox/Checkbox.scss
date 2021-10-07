@@ -1,0 +1,32 @@
+.Checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+
+  input {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ececec;
+  }
+  input:checked ~ div {
+    color: black;
+  }
+}
